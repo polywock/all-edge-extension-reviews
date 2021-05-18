@@ -1,4 +1,4 @@
-## all-edge-extension-reviews
+## All Edge Extension Reviews
 
 ### Bookmarklet to find Edge extension reviews from all regions. 
 
