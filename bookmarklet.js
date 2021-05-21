@@ -1,4 +1,3 @@
-
 javascript:(() => {
 
     const MAX_PER_REGION = 3;
@@ -80,7 +79,7 @@ javascript:(() => {
         let meta = document.createElement("a");
         meta.style.fontSize = "0.85em";
         meta.style.marginLeft = "10px";
-        meta.textContent = `${markets[v.market.toUpperCase()]} - ${v.date?.toDateString()}`;
+        meta.textContent = `${markets[v.market.toUpperCase()]} - ${v.date?.toLocaleString()}`;
         meta.href = `https://microsoftedge.microsoft.com/addons/detail/global-speed/${crxId}?gl=${v.market}&ksft=${Math.round(Math.random() * 1E9).toString()}&${!lang ? "" : `&hl=${lang}`}`;
 
         let text = document.createElement("span");
