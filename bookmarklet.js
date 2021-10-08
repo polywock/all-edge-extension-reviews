@@ -13,7 +13,7 @@ javascript:(() => {
     let title;
 
     const ensureCrxId = () => {
-        let url = document.querySelector("#ReportAbuseButton")?.href;
+        let url = document.querySelector("#ReportAbuseButton1")?.href;
         if (!url) throw Error("no CRX id found.");
         const arr = url.split("?")[0].split("/");
         const id = arr[arr.length - 1];
