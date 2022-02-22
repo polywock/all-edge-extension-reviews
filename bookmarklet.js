@@ -215,23 +215,25 @@ javascript:(() => {
 
             attachWrapper(); 
             window.reviews = reviews;
+            console.log(reviews);
         };
             
 
         if (confirm("Sorted by date? ")) {
             window.scrollTo(0, -10000);
             sortReload(); 
-            console.log(reviews);
         } else {
            let sorter = document.createElement("button");
            sorter.textContent = "Sort by date"; 
            sorter.style.fontSize = "1.2em";
            sorter.addEventListener("click", () => {
               sortReload();
+              showAverageReviews(reviews);
            }, {once: true, capture: true});
            wrapper.prepend(sorter);
         };
         showAverageReviews(reviews);
+        
     }).catch(err => {
         alert(err);
     });
